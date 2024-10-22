@@ -1,3 +1,16 @@
+```
+git init coredns && cd coredns
+git remote add origin https://github.com/coredns/coredns.git
+git fetch origin c8829a63b9fb611185a0ee5f00aaa9aad1095929
+git checkout FETCH_HEAD
+git remote add origin2 git@github.com:nealhallyoung/coredns.git
+git checkout -b main
+mv .github github_backup
+git add --all
+git commit -m "remove action"
+git push origin2 main
+```
+
 [![CoreDNS](https://coredns.io/images/CoreDNS_Colour_Horizontal.png)](https://coredns.io)
 
 [![Documentation](https://img.shields.io/badge/godoc-reference-blue.svg)](https://godoc.org/github.com/coredns/coredns)
